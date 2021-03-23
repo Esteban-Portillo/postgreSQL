@@ -1,0 +1,169 @@
+// creating a new table 
+
+
+create table userssecondtest(
+	id serial primary key,
+  	firs_name varchar(250),
+	las_name varchar(250),
+	age int,
+	suscribed bool 
+);
+
+
+
+// insert stuf to our table 
+
+
+insert into userssecondtest 
+(las_name, suscribed, firs_name, age )
+values
+('portillo', true, 'esteban', 25);
+
+
+
+
+//select stuff 
+
+
+select * from userssecondtest 
+
+we can run the create table at first and then the insert stuff at the same time and 
+the software will do it with no problem 
+
+
+
+
+
+
+-- create table userssecondtest(
+-- 	id serial primary key,
+--   firs_name varchar(250),
+-- 	las_name varchar(250),
+-- 	age int,
+-- 	suscribed bool 
+-- );
+
+-- insert into userssecondtest 
+-- (las_name, suscribed, firs_name, age )
+-- values
+-- ('portillo', true, 'carlitos', 25);
+
+-- select * from userssecondtest;
+
+-- insert into userssecondtest 
+-- (firs_name, las_name, suscribed, name)
+-- values 
+-- ('bob', 'jdslfj', false, 21),
+-- ('esteban','chapaquin',true,23);
+-- this dosnt work give it an eye 
+
+-- for select just expecific things 
+-- select firs_name, age from userssecondtest
+
+
+-- where statement 
+
+
+-- this will be very peeky with upper case 
+
+
+-- select * from userssecondtest 
+-- where firs_name = 'carlitos'
+
+
+-- this dosn t work for the lower case so we will use the ILIKE STATEMETN 
+-- select * from userssecondtest 
+-- where firs_name like 'Carlitos'
+
+-- select * from userssecondtest 
+-- where firs_name Ilike 'CarLitos'
+
+-- this worked really nice 
+-- we can limited wit limit at the end 
+
+-- select * from userssecondtest 
+-- where firs_name Ilike 'EsteBan'
+-- limit 3;
+
+-- this works really nice 
+
+-- select * from userssecondtest
+-- where firs_name ilike 'esteban'
+-- offset 1;
+
+-- i dont know hat the offset do hahha investigate 
+
+
+-- select * from invoice_line
+-- where track_id between 10 and 24
+-- order by track_id desc;
+-- this is a great to use the comparators and the thing in between 
+-- is something usefull to 
+-- if we dont use the asc in the track id it will be ther by default
+-- desc for desending order 
+-- asc for ascending order 
+
+
+-- now we will work with nunll values 
+--
+-- select * from customer
+-- where state is null 
+
+-- really anoying to change the = for an is but is needed 
+--and the oposite will be:
+
+-- select * from customer
+-- where state is not null 
+
+-- select IN STATEMENT 
+-- something with or condition 
+
+-- select * from playlist
+-- where name like 'Music' or name like 'Movies';
+
+-- so now we just the selected stuff in the or 
+
+-- select * from playlist 
+-- where name in ('Music','Movies')
+
+
+-- FUNCTUIONS IN SQL 
+
+-- select  employee_id, first_name, last_name from employee;
+
+-- select count (*) from employee 
+
+-- this was made for count the columns i thing 
+
+-- select avg(employee_id) from employee;
+-- select max(employee_id) from employee 
+
+
+-- UPDATE STUFF 
+
+-- update userssecondtest 
+-- set firs_name = 'carlitos'
+-- where id = 2;
+
+-- if we dont use where we will chage all the names , so is really important
+-- it be carefull 
+
+
+-- select * from userssecondtest
+-- order by id asc;
+
+-- delete from userssecondtest
+-- where id = 1;
+
+
+
+-- select * from userssecondtest
+-- order by id asc ;
+
+-- truncate table userssecondtest;
+
+
+select * from userssecondtest;
+
+drop table userssecondusers;
+select * from userssecondtest
